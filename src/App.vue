@@ -1,32 +1,37 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <router-view />
+    <div class="btn_box">
+      <button>
+        <router-link to="/">Main Page</router-link>|
+      </button>
+      <button>
+        <router-link to="/people">People</router-link>
+      </button>
     </div>
-    <router-view/>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+ <style lang="less" scoped>
+.btn_box {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  button {
+    width: 30%;
+    height: 30px;
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #eee;
+  }
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+button:hover {
+  box-shadow: 0 0 3px #819ff7;
+  background-color: #819ff7;
+  border: 1px solid #819ff7;
 }
 </style>

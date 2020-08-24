@@ -1,0 +1,14 @@
+html,body, #app{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* 链接样式清除 */
+a {
+    text-decoration: none;
+    color: #000;
+}
+/* router-link点击样式清除 */
+.router-link-active {
+    text-decoration: none;
+}
