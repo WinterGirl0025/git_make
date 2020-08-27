@@ -1,8 +1,8 @@
 <template>
   <div class="container_box">
     <h1>{{login}}</h1>
-    <img :src="img" alt />
-    <div v-if="description">{{description}}</div>
+    <div class="img-box">{{img}}</div>
+    <div v-if="description" class="descp">{{description}}</div>
   </div>
 </template>
 
@@ -47,7 +47,16 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  div{
+  height: 60%;
+  .img-box {
+    height: 50%;
+    width: 40%;
+    background-color: pink;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+  }
+  .descp {
     margin-top: 40px;
     font-weight: 700;
   }

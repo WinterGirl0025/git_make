@@ -1,21 +1,23 @@
 <template>
   <div id="app">
+    <h1>git测试版</h1>
     <router-view />
     <div class="btn_box">
-      <button>
-        <router-link to="/">Main Page</router-link>
-      </button>
-      <button>
-        <router-link to="/people">People</router-link>
-      </button>
+      <!-- 主页-轮播图 -->
+      <router-link to="/" tag="button">Main Page</router-link>
+      <!-- 人员 -->
+      <router-link to="/people" tag="button">People</router-link>
     </div>
   </div>
 </template>
 
- <style lang="less" scoped>
+<style lang="less" scoped>
+h1 {
+  text-align: center;
+}
 .btn_box {
   position: absolute;
-  bottom: 0;
+  bottom: 12px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -27,12 +29,6 @@
     background-color: #eee;
     border-radius: 3px;
     border: 1px solid #eee;
-    a{
-      width: 100%;
-      height: 100%;
-      display: inline-block;
-      line-height: 30px;
-    }
   }
 }
 button:hover {

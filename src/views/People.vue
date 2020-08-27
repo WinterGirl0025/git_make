@@ -21,6 +21,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
+h1,ul {
+  text-align: center;
+}
 ul,
 li {
   list-style: none;

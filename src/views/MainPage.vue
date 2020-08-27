@@ -6,6 +6,7 @@
 
 <script>
 import CirclePage from '../components/CirclePage'
+
 export default {
   components: { CirclePage },
   data() {
@@ -16,6 +17,6 @@ export default {
 
 <style scoped>
 .circle {
-  height: 56%;
+  height: 40%;
 }
 </style>
