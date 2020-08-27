@@ -3,7 +3,7 @@
     <router-view />
     <div class="btn_box">
       <button>
-        <router-link to="/">Main Page</router-link>|
+        <router-link to="/">Main Page</router-link>
       </button>
       <button>
         <router-link to="/people">People</router-link>
@@ -27,6 +27,12 @@
     background-color: #eee;
     border-radius: 3px;
     border: 1px solid #eee;
+    a{
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      line-height: 30px;
+    }
   }
 }
 button:hover {
