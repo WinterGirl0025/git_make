@@ -1,3 +1,7 @@
 i am a;
 and you?
+<<<<<<< HEAD
 i am good
+=======
+how are you?
+>>>>>>> d2d8fa7542b544c7f2098504d46743f30850b432
