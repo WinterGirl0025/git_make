@@ -1,7 +1,0 @@
-i am a;
-and you?
-<<<<<<< HEAD
-i am good
-=======
-how are you?
-//
